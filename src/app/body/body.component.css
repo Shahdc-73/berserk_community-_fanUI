@@ -1,0 +1,42 @@
+/* Custom CSS for Berserk Theme */
+.berserk-container {
+  background-color: #1A1A1A;
+  color: #FFFFFF;
+  margin: 32px;
+}
+
+.berserk-container .card {
+  background-color: #2B2B2B;
+  color: #FFFFFF;
+}
+
+.berserk-container .card-title {
+  color: #c31c03; /* Berserk theme orange */
+}
+
+.berserk-container .card-body {
+  border-top: 1px solid #3A3A3A;
+}
+
+.text-danger {
+  color: #f50c0c !important
+}
+.card-img-top{
+  height: 564px;
+  height: 436px;
+
+
+}
+.card-img3{
+  height:211px ;
+  width:239px ;
+}
+.card-img2{
+  width: 211px ;
+  height: 239px ;
+}
+
+.card-img1{
+  width: 211px ;
+  height: 239px ;
+}

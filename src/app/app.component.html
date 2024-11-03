@@ -1,0 +1,28 @@
+ 
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+<app-header></app-header>
+<app-tite></app-tite>
+<app-section1
+  [title]="heroTitle"
+  [description]="heroDescription"
+  [buttonText]="submitButtonText"
+  [buttonColor]="submitButtonColor"
+  [buttonTextColor]="submitButtonTextColor"
+  (emailSubmitted)="handleEmailSubmission($event)"
+></app-section1>
+<app-section2
+  [mainImageSrc]="'assets/gg.jpg'"
+  [mainTitle]="'Unleash your inner darkness with new tools.'"
+  [mainText]="'Harness the power of darkness in your battles. Experience the true meaning of struggle.'"
+  [mainDate]="'25 Apr 2022'"
+  [secondaryCards]="[
+    { imgSrc: 'assets/guts4.png', title: 'Master new weapons and skills', text: 'Forge your destiny with weapons forged in darkness.', subtitle: 'GUTS' },
+    { imgSrc: 'assets/gggg.jpeg', title: 'Faster ways to conquer your enemies', text: 'Dominate your enemies with relentless force.', subtitle: 'GRIFFITH' },
+    { imgSrc: 'assets/casca.jpeg', title: 'Witness the struggle unfold', text: 'Journey through darkness and despair.', subtitle: 'CASCA' }
+  ]">
+</app-section2>
+
+<app-body></app-body>
+<app-footer></app-footer>

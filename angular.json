@@ -1,0 +1,127 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "task2": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "",
+      "sourceRoot": "src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/task2",
+            "index": "src/index.html",
+            "browser": "src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "tsconfig.app.json",
+            "assets": [
+              "src/app/assets/logo.png",
+              "src/app/assets/guts1.jpeg",
+              "src/app/assets/guts2.jpg.webp",
+              "src/app/assets/guts3.jpg",
+              "src/app/assets/guts4.png",
+              "src/app/assets/guts.png",
+              "src/app/assets/gg.jpg",
+              "src/app/assets/gggg.jpeg",
+              "src/app/assets/casca.jpeg",
+              "src/app/assets/Unknown.png",
+              "src/app/assets/small.png.jpeg",
+              "src/app/assets/small.png-removebg-preview.png",
+              "src/app/assets/1.jpeg",
+              "src/app/assets/2.jpg",
+              "src/app/assets/3.jpeg",
+              "src/app/assets/4.jpeg",
+              "src/app/assets/5.jpeg",
+              "src/app/assets/6.jpeg",
+              "src/favicon.png",
+
+
+              {
+                "glob": "**/*",
+                "input": "public"
+
+              }
+            ],
+            "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles.css"
+            ],
+            "scripts": [],
+            "server": "src/main.server.ts",
+            "prerender": true,
+            "ssr": {
+              "entry": "server.ts"
+            }
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kB",
+                  "maximumError": "1MB"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kB",
+                  "maximumError": "4kB"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "task2:build:production"
+            },
+            "development": {
+              "buildTarget": "task2:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "tsconfig.spec.json",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "public"
+              }
+            ],
+            "styles": [
+              "src/styles.css"
+            ],
+            "scripts": []
+          }
+        }
+      }
+    }
+  },
+  "cli": {
+    "analytics": "1d35fe4f-60e4-46f7-8ea9-b8a0ffc3da2e"
+  }
+}

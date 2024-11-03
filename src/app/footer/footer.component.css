@@ -1,0 +1,69 @@
+/* General Footer Styling */
+.footer {
+  background-color: #343a40;
+  color: #f8f9fa;
+  padding: 40px 0;
+}
+
+/* Footer Links */
+.footer a {
+  color: #f8f9fa;
+  text-decoration: none;
+
+}
+
+.footer a:hover {
+  color: #007bff;
+}
+
+/* Footer Headings */
+.footer h5 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+
+.footer p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+
+.footer ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+
+.p-4 {
+  padding: 1.5rem !important; /* Use Bootstrap's padding utility */
+}
+
+/* Footer Bottom Styling */
+.berserk-footer-bottom {
+  background-color: #23272b; /* Slightly different shade for the bottom section */
+  color: #f8f9fa;
+  padding: 10px 0;
+}
+
+.berserk-footer-bottom a {
+  color: #f8f9fa;
+  text-decoration: none;
+}
+
+.berserk-footer-bottom a:hover {
+  color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer .text-center {
+    text-align: center;
+  }
+}
